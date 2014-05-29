@@ -1,5 +1,4 @@
-rolling_window
-==============
+# Rolling Window
 
 Simple rolling window implementation
 
@@ -7,16 +6,14 @@ Compute local information within a rolling time
 window of length T, such as the number of points in the 
 window, the  minimum or maximum, or the rolling sum.
 
------------------------------------------------------------
 An example is given below,  with T = 60 and
-•   Time: number of seconds since epoch
-•   Value: price ratio (no unit)
-•   N_O: number of observation of in the curing 
+*   Time: number of seconds since epoch
+*   Value: price ratio (no unit)
+*   N_O: number of observation of in the curing 
     sliding time window
-•   Roll_Sum: the current rolling sum,
-•   Min_Value and Max_Value the minimum/maximum in the 
+*   Roll_Sum: the current rolling sum,
+*   Min_Value and Max_Value the minimum/maximum in the 
     current window:
------------------------------------------------------------
 
 
 |    Time    |  Value  | NO | Roll_Sum | Min_Val | Max_Val |   
@@ -42,17 +39,13 @@ An example is given below,  with T = 60 and
 | 1355271562 | 1.80275 | 2  | 3.6054   | 1.80265 | 1.80275 |
 | 1355271588 | 1.80295 | 2  | 3.6057   | 1.80275 | 1.80295 |
 
------------------------------------------------------------
-    1. Compile 
------------------------------------------------------------
+## Compile 
 
 cd Release
 make clean
 make all
 
------------------------------------------------------------
-    2. Run
------------------------------------------------------------
+## Run
 
 cd ..
 ./rolling_window data.csv
